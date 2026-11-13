@@ -1,0 +1,15 @@
+# Versions verified together in the project's local environment.
+streamlit==1.50.0
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-groq==0.3.8
+langchain-text-splitters==0.3.11
+langchain-chroma==0.2.6
+langchain-community==0.3.31
+langchain-huggingface==0.3.1
+chromadb==1.5.9
+sentence-transformers==5.1.2
+PyMuPDF==1.26.5
+python-pptx==1.0.2
+pandas==2.3.3
+openpyxl==3.1.5

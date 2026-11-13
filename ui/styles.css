@@ -1,0 +1,46 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap');
+:root{--navy:#17172f;--violet:#7254d8;--lavender:#f2efff;--ink:#24233d;--muted:#625f78;--line:#e5e2ef;--text-color:#24233d;--background-color:#faf9ff;--secondary-background-color:#fff;--primary-color:#7254d8}
+html,body,[class*="css"]{font-family:'DM Sans',sans-serif}
+.stApp{background:linear-gradient(150deg,#faf9ff 0%,#fff 48%,#f7f6fc 100%);color:var(--ink);--text-color:#24233d;--background-color:#faf9ff;--secondary-background-color:#fff}
+/* Streamlit sets explicit theme colors on markdown and metric descendants. Set the
+   main content colors directly so a dark system theme cannot wash out light cards. */
+[data-testid="stMain"], [data-testid="stMain"] [data-testid="stMarkdownContainer"],
+[data-testid="stMain"] [data-testid="stCaptionContainer"], [data-testid="stMain"] label,
+[data-testid="stMain"] [data-testid="stMetricLabel"], [data-testid="stMain"] [data-testid="stMetricValue"],
+[data-testid="stMain"] [data-testid="stMetricDelta"]{color:var(--ink)!important}
+[data-testid="stMain"] h1,[data-testid="stMain"] h2,[data-testid="stMain"] h3,[data-testid="stMain"] h4{color:#201e37!important;font-family:'Manrope',sans-serif;letter-spacing:-.035em}
+[data-testid="stMain"] p,[data-testid="stMain"] li,[data-testid="stMain"] small{color:#302e46}
+.stApp{background:linear-gradient(150deg,#faf9ff 0%,#fff 48%,#f7f6fc 100%)}
+[data-testid="stSidebar"]{background:var(--navy);border-right:1px solid #2b2a48}
+[data-testid="stSidebar"], [data-testid="stSidebar"] *{color:#f6f4ff}
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"]{color:#d5d1e9!important}
+[data-testid="stSidebar"] [data-testid="stRadio"] label{padding:9px 12px;border-radius:10px;transition:.2s}
+[data-testid="stSidebar"] [data-testid="stRadio"] label:hover{background:#292744}
+[data-testid="stSidebar"] [data-baseweb="select"]>div{background:#262541;border-color:#454361}
+[data-testid="stSidebar"] [data-baseweb="select"] *{color:#fff!important}
+[data-testid="stSidebar"] [data-testid="stFileUploader"]{background:#22213e;border-radius:12px}
+[data-testid="stSidebar"] input,[data-testid="stSidebar"] textarea{background:#262541;color:#fff;border-color:#454361}
+h1,h2,h3{font-family:'Manrope',sans-serif;letter-spacing:-.035em}
+.hero{background:linear-gradient(115deg,#201d49,#5240a0 65%,#8069d7);color:#fff;padding:32px 36px;border-radius:22px;box-shadow:0 16px 34px #352d6830;margin:8px 0 22px}
+.hero h1{color:#fff!important;margin:2px 0 8px;font-size:34px}.hero p{color:#eeeaff!important;margin:0}
+.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#e2d9ff;font-weight:700}
+.card{background:#fff;color:#24233d;border:1px solid var(--line);border-radius:17px;padding:20px 22px;box-shadow:0 7px 22px #312d5a0a;margin-bottom:12px}
+.card h1,.card h2,.card h3,.card h4,.card p,.card b,.card strong{color:#24233d!important}
+.metric{font-size:29px;font-family:'Manrope';font-weight:800;color:#292445;margin-top:9px}.metric-label{font-size:13px;color:#625f78}
+.agent-card{height:142px;transition:transform .2s,box-shadow .2s}.agent-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #5444a31a}.agent-icon{color:var(--violet);font-size:21px}
+.pill{display:inline-block;background:#f1edff;color:#4e389f;padding:4px 10px;border-radius:99px;font-size:11px;font-weight:700}
+.small-muted{color:#625f78;font-size:13px}
+[data-testid="stMetric"]{background:#fff;border:1px solid var(--line);padding:15px;border-radius:14px}
+[data-testid="stMetric"] label,[data-testid="stMetric"] [data-testid="stMetricLabel"]{color:#625f78!important}
+[data-testid="stMetric"] [data-testid="stMetricValue"]{color:#292445!important}
+[data-testid="stMain"] input,[data-testid="stMain"] textarea,[data-testid="stMain"] [data-baseweb="select"]>div{background:#fff;color:#24233d;border-color:#d8d4e5}
+[data-testid="stMain"] input::placeholder,[data-testid="stMain"] textarea::placeholder{color:#77738a;opacity:1}
+[data-testid="stMain"] [data-testid="stExpander"] summary,[data-testid="stMain"] [data-testid="stAlert"]{color:#24233d}
+.stButton>button{border-radius:11px;border:1px solid #ded9f2;color:#302d48;transition:all .18s}
+.stButton>button:hover{border-color:#8067df;color:#604ac0;transform:translateY(-1px)}
+[data-testid="stMain"] .stButton>button[kind="primary"]{background:linear-gradient(110deg,#644cc4,#816ade);color:#fff!important;border:none}
+[data-testid="stSidebar"] .stButton>button{color:#f6f4ff;background:#292744;border-color:#454361}
+hr{border-color:var(--line)}
+</style>

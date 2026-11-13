@@ -1,0 +1,41 @@
+# Python bytecode and test artifacts
+__pycache__/
+**/__pycache__/
+*.pyc
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Local Python environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+
+# Credentials and local environment configuration
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# Uploaded papers and generated/private application data
+*.pdf
+*.db
+*.sqlite
+*.sqlite3
+data/*
+!data/.gitkeep
+.chroma/
+
+# Generated exports
+*.pptx
+*.docx
+*.xlsx
+*.xls
+
+# Local caches and OS files
+.cache/
+.DS_Store
+Thumbs.db
