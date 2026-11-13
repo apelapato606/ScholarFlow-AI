@@ -3,7 +3,7 @@
 ScholarFlow AI is a Streamlit research workspace that ingests academic PDFs, retrieves paper-specific passages, and routes requests to four focused AI agents: Summarizer, Concept Extractor, Slide Generator, and Viva Practice. It uses Groq through LangChain LCEL, HuggingFace sentence-transformer embeddings, persistent ChromaDB, PyMuPDF, python-pptx, and Pandas.
 
 
-🚀 Live Demo
+🚀 OPEN THE WEBSITE
 [Open ScholarFlow AI](https://scholarflow-ai-u6p7se4jrqgqjmm7ycv5cd.streamlit.app/)
 
 ## Features
