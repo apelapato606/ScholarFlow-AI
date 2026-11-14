@@ -11,6 +11,8 @@ html,body,[class*="css"]{font-family:'DM Sans',sans-serif}
 [data-testid="stMain"] [data-testid="stMetricDelta"]{color:var(--ink)!important}
 [data-testid="stMain"] h1,[data-testid="stMain"] h2,[data-testid="stMain"] h3,[data-testid="stMain"] h4{color:#201e37!important;font-family:'Manrope',sans-serif;letter-spacing:-.035em}
 [data-testid="stMain"] p,[data-testid="stMain"] li,[data-testid="stMain"] small{color:#302e46}
+[data-testid="stChatMessageContent"][aria-label="Chat message from assistant"] [data-testid="stMarkdownContainer"],
+[data-testid="stChatMessageContent"][aria-label="Chat message from assistant"] [data-testid="stMarkdownContainer"] *{color:#1F2937!important}
 .stApp{background:linear-gradient(150deg,#faf9ff 0%,#fff 48%,#f7f6fc 100%)}
 [data-testid="stSidebar"]{background:var(--navy);border-right:1px solid #2b2a48}
 [data-testid="stSidebar"], [data-testid="stSidebar"] *{color:#f6f4ff}
