@@ -97,7 +97,8 @@ In local development, uploaded PDFs, Chroma data, and SQLite metadata are stored
 
 ## Screenshots
 
-Add genuine screenshots after running the app, with example files under `docs/screenshots/`. Suggested captures: overview, research library with a sample paper, concept exploration with citations, generated slide outline, viva evaluation and report. Do not include API keys or private papers in screenshots.
+<img width="1408" height="881" alt="image" src="https://github.com/user-attachments/assets/e4fc4cc3-48f6-4698-8bed-f5a758a98a02" />
+
 
 ## Tests
 
