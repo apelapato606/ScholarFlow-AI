@@ -5,13 +5,20 @@ from core.llm import get_api_key, get_model_name, test_groq_connection
 from services.pdf_service import list_papers
 from ui import dashboard, library, assistant, presentation, viva
 
-st.set_page_config(page_title="ScholarFlow AI",page_icon="✧",layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(page_title="ScholarFlow AI",page_icon="✧",layout="wide",initial_sidebar_state="auto")
 st.markdown(Path(__file__).parent.joinpath("ui/styles.css").read_text(),unsafe_allow_html=True)
 init_memory()
 
+NAVIGATION_ICONS = {
+    "Overview": "◫", "Research Library": "▤", "Paper Assistant": "✧",
+    "Concept Explorer": "⌕", "Presentation Studio": "▣", "Viva Practice": "◎",
+    "Session Reports": "▥", "Settings": "⚙",
+}
+
 with st.sidebar:
     st.markdown("<div style='padding:15px 6px 20px'><div style='font-size:12px;letter-spacing:.15em;color:#bcb0ff;font-weight:700'>✧ SCHOLARFLOW</div><div style='font-size:21px;font-weight:800;font-family:Manrope;margin-top:4px'>Research, clarified.</div></div>",unsafe_allow_html=True)
-    page=st.radio("Workspace",["Overview","Research Library","Paper Assistant","Concept Explorer","Presentation Studio","Viva Practice","Session Reports","Settings"],label_visibility="collapsed")
+    pages=["Overview","Research Library","Paper Assistant","Concept Explorer","Presentation Studio","Viva Practice","Session Reports","Settings"]
+    page=st.radio("Workspace",pages,format_func=lambda section:"{}  {}".format(NAVIGATION_ICONS[section],section),label_visibility="collapsed")
     st.markdown("---")
     papers=list_papers()
     ready=[p for p in papers if p["status"]=="Ready"]
